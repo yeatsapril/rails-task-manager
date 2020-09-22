@@ -1,5 +1,6 @@
 <%= simple_form_for(task) do |form| %>
   <%= form.input :title, placeholder: 'Type a title' %>
   <%= form.input :details, placeholder: 'Type a description' %>
+  <%= form.input :completed, placeholder: 'Type the completion status' %>
   <%= form.submit action_name == 'new' ? 'save task' : 'edit task' %>
 <% end %>
